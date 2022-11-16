@@ -1,0 +1,166 @@
+/*GOOGLE FONT APIS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --main-color: rgb(82, 197, 135);
+    --sec-color: rgb(218, 255, 212);
+    --accent-color: rgba(218, 255, 212, 0.3);
+    --text-color: #3a3a3a;
+    --main-font:'Sarina', cursive;
+    --body-font: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+ul {
+    font-family: var(--body-font);
+    position: absolute;
+    z-index: 100;
+}
+
+/* NAV BAR STYLING*/
+nav {
+    box-shadow: 0px 4px 34px 4px rgba(0, 0, 0, .25);
+    background-color: white;
+    font-weight: bold;
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+  
+}
+
+
+.px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2882, 197, 135%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+/* changing logo color */ 
+
+.navbar-brand {
+    color: var(--main-color);
+    text-shadow: 4px 4px var(--sec-color);
+    font-size: 36px;
+}
+
+.nav-item {
+    padding: 15px; 
+    font-size: 18px;
+    color: var(--text-color);
+
+}
+
+
+
+ /* main color on hover for links and dropdown items */
+.dropdown-item:hover {
+    background-color: var(--main-color);        
+}
+
+.nav-link:hover {
+    color: var(--main-color); 
+}
+
+.dropdown-menu {
+    border-radius: 0px;                         /* SHARPENING CORNERS*/
+    border: none;                                /* REMOVING OUTLINE*/
+    box-shadow: 0px 4px 34px 4px rgba(0, 0, 0, .25); /*DROP SHADOW ADDED*/
+    margin-top: 5px;                                 /* POSITIONING DROPDOWN MENU FLUSH TO BOTTOM OF NAV, MAYBE THERE'S A BETTER WAY? */
+}
+/*CREATING CLASS TO SEPARATE "FOOD" LINK, INCREASED HOVERABLE 
+AREA TO MAINTIAN HOVER DROPDOWN WHILE TRANSITIONING MOUSE FROM LINK TO MENU*/
+ 
+
+.dropdown-item {                             /*  MATCHING FONT AND BOLDNESS OF NAV*/
+    font-weight: bold;          
+    font-family: var(--body-font);
+    color: var(--text-color);
+}
+
+.nav-link { 
+    color: var(--text-color)
+}
+
+.navbar-brand:hover {    /* DIDN'T LIKE LOGO TURNING BLACK ON HOVER SINCE IT IS A LINK, OVERRIDING WITH THIS */
+       color: var(--main-color);
+}
+
+.navbar-brand:focus {
+    color: var(--main-color);
+}
+/* adding notes to create changes for a pull request for story 4.2 */
+@media screen and (min-width: 980px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+     }
+     .nav-link {
+        padding: 30px;
+     }
+    }
+
+@media (min-width: 980px) {
+    .rounded-lg-3 { border-radius: .3rem; }
+    }
+
+
+
+container {
+    font-family: var(--body-font);
+    font-weight: bold;
+    
+       
+}
+
+i {
+    color: var(--main-color);
+    background-color: white;
+    border-color: white;
+}
+
+.btn {
+    background-color: white;
+    color: var(--main-color);
+    border-color: var(--main-color);
+    border-radius: 20px;
+    border-width: 2px;
+
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    border-color: white; 
+    color: white;
+}
+
+h1.myh1 {
+    font-size: 26px;
+}
+
+.searching {
+    position: relative;
+    bottom: 100px;
+    min-width: 959px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(255, 255, 255, .80);
+    height: 75px;
+    box-shadow: 0px 0px 19px -2px rgb(0, 0, 0, .25);
+
+    
+
+}
+
+.v-divider{
+  
+    height: 50%;
+    border-left:3px solid #D9D9D9;
+    
+   }
+
